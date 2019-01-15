@@ -1,0 +1,374 @@
+/*
+ * DEFAULT STYLES ***************************
+ */
+
+body {
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Charm', cursive;
+}
+
+/*
+ * PROMO BLOCK START **************************
+ */
+
+
+.promo {
+    position: relative;
+    display: flex;
+    background: url(../img/test.png) center no-repeat;
+    background-size: cover;
+}
+
+.promo::before {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    top: -20px;
+    right: 220px;
+    width: 200px;
+    height: 200px;
+    background: url(../img/usa.png) center no-repeat;
+    background-size: contain;
+    transform: rotate(90deg);
+}
+
+.promo::after {
+    content: '';
+    position: absolute;
+    z-index: 15;
+    top: -20px;
+    right: 350px;
+    width: 200px;
+    height: 200px;
+    background: url(../img/russian.png) center no-repeat;
+    background-size: contain;
+    transform: rotate(90deg);
+}
+
+.promo-inner::after {
+    content: '';
+    position: absolute;
+    z-index: 5;
+    right: 40px;
+    top: -110px;
+    width: 300px;
+    height: 300px;
+    background: url(../img/ukraine.png) center no-repeat;
+    background-size: contain;
+    transform: rotate(90deg);
+}
+
+.promo-content {
+    box-sizing: border-box;
+    max-width: 40%;
+    padding: 20px 40px;
+    padding-right: 180px;
+    margin: 60px auto;
+    color: #fff;
+    line-height: 1.2em;
+    letter-spacing: 1px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.promo-content::first-letter {
+    font-family: 'Charm', cursive;
+    font-size: 26px;
+    color: #1473e6;
+}
+
+/*
+ * BIOGRAPHY BLOCK START ******************************
+ */
+
+.biography {
+    background: #f9f9f9;
+}
+
+.biography-inner {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    padding: 0 40px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+.biography-column {
+    margin: 0 20px;
+}
+
+.biography-content {
+    text-align: justify;
+    text-indent: 15px;
+}
+
+.biography-content::first-letter {
+    font-family: 'Charm', cursive;
+    font-size: 24px;
+    color: #1473e6;
+}
+
+.biography-quote {
+    position: relative;
+    padding: 25px 40px;
+    text-align: justify;
+}
+
+.biography-icon {
+    position: absolute;
+    font-size: 24px;
+    color: #25064c;
+    text-shadow: -1px 1px 0 #1473e6, -2px 3px 0 #25064c;
+}
+
+.biography-icon-one {
+    top: 0;
+    right: 0;
+}
+
+.biography-icon-two {
+    bottom: 0;
+    left: 0;
+}
+
+.biography-quote-author {
+    font-family: 'Charm', cursive;
+    font-size: 22px;
+    color: #25064c;
+}
+
+/*
+ * SERVICES BLOCK START
+ */
+
+.services {
+    max-width: 1560px;
+    padding: 0 20px;
+    margin: 40px auto;
+    margin-bottom: 80px;
+}
+
+.services-title {
+    margin-bottom: 60px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 20%;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 2px #000;
+}
+
+.services-icon {
+    margin-bottom: 20px;
+    font-size: 90px;
+    color: #25064c;
+    text-shadow: -1px 1px 0 #1473e6,
+                 -2px 2px 0 #1473e6,
+                 -3px 3px 0 #25064c,
+                 -4px 4px 0 #25064c,
+                 -5px 5px 0 #1473e6,
+                 -6px 6px 0 #1473e6;
+}
+
+.services-content {
+    margin-bottom: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/*
+ * COURSE BLOCK START *****************************
+ */
+
+.course {
+    display: flex;
+}
+
+.course-column {
+    width: 40%;
+    background: linear-gradient(200deg, #6220d9, #25064c);
+}
+
+.course-bg {
+    width: 60%;
+    background: url(../img/bg-course.png) right top no-repeat;
+    background-size: cover;
+}
+
+.course-content {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 50px 0;
+    margin-left: auto;
+    margin-right: 40px;
+    color: #fff;
+    text-align: justify;
+}
+
+.course-container--bg {
+    background: url(../img/bg-course-2.jpeg) center no-repeat;
+    background-size: cover;
+}
+
+.course-content--style {
+    padding: 60px 0;
+    margin-bottom: 0;
+}
+
+
+/*
+ * CONTACT BLOCK START
+ */
+
+
+.contact {
+    padding: 30px 0;
+    margin: 0 auto;
+    color: #fff;
+    background: #262626;
+}
+
+.contact-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 60px;
+    color: #1473e6;
+    text-align: center;
+    text-shadow: -1px 1px 0 #25064c,
+                 -2px 2px 0 #25064c,
+                 -3px 3px 0 #1473e6;
+}
+
+.social {
+    max-width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.social-item {
+    margin: 10px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social i {
+    color: #1473e6;
+    font-size: 30px;
+    width: 35px;
+    height: 35px;
+}
+
+.social span {
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+@media (max-width: 1300px) {
+    .promo-content {
+        width: 50%;
+        padding-right: 20px;
+        margin-left: 40px;
+    }
+    .course-column {
+        width: 50%;
+    }
+    .course-bg {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .promo-inner {
+        padding-top: 200px;
+    }
+    .promo-content {
+        max-width: 70%;
+        padding: 10px 20px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .services-container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .services-item {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+    .course-content {
+        width: 100%;
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .promo::before {
+        right: 100px;
+    }
+    .promo::after {
+        right: 230px;
+    }
+    .promo-content {
+        width: auto;
+    }
+    .promo-inner::after {
+        right: -85px;
+    }
+    .biography {
+        padding-bottom: 30px;
+    }
+    .biography-inner {
+        display: block;
+    }
+    .biography-image {
+        display: block;
+        width: 160px;
+        margin: 0 auto;
+    }
+    .services-container {
+        display: block;
+    }
+    .services-item {
+        width: auto;
+        display: flex;
+    }
+    .course-column {
+        width: auto;
+    }
+    .course-bg {
+        display: none;
+    }
+}
+
+
+
